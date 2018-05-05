@@ -1,0 +1,31 @@
+{
+  "name": "boop-destination",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/am-tech/boop-destination.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/am-tech/boop-destination/issues"
+  },
+  "homepage": "https://github.com/am-tech/boop-destination#readme",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "joi": "^13.2.0",
+    "koa": "^2.5.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-morgan": "^1.0.1",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.4"
+  }
+}
