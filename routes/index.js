@@ -1,4 +1,5 @@
 const Router = require('koa-router');
+const fillPdf = require('../lib/fill-pdf');
 
 const router = new Router();
 
@@ -17,7 +18,7 @@ router.post('/', async (ctx, next) => {
     ctx.throw(400);
   }
 
-  // TODO: trigger processing
+  await fillPdf('Patient_Info_with_fields.pdf', Patient);
 
   ctx.body = {};
 })
