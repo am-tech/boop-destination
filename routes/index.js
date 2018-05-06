@@ -19,6 +19,7 @@ const templateMapping = {
 router.post('/', async (ctx, next) => {
   const { Meta, Patient } = ctx.request.body;
 
+  // TODO: this id would ideally come from the webhook, it's used to pick a template
   const id = 'f91b0c80-8038-404c-996a-c19d81fc8134';
 
   if (Meta.DataModel !== 'PatientAdmin' || Meta.EventType !== 'NewPatient') {
